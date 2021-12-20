@@ -1,0 +1,13 @@
+C:\Users\purv2\source\repos\Airline-Manager\Airlines Management App\bin\Debug\Airlines Management App.exe.config
+C:\Users\purv2\source\repos\Airline-Manager\Airlines Management App\bin\Debug\Airlines Management App.exe
+C:\Users\purv2\source\repos\Airline-Manager\Airlines Management App\bin\Debug\Airlines Management App.pdb
+C:\Users\purv2\source\repos\Airline-Manager\Airlines Management App\obj\Debug\Airlines Management App.csproj.AssemblyReference.cache
+C:\Users\purv2\source\repos\Airline-Manager\Airlines Management App\obj\Debug\Airlines_Management_App.FlightsTable.resources
+C:\Users\purv2\source\repos\Airline-Manager\Airlines Management App\obj\Debug\Airlines_Management_App.Form1.resources
+C:\Users\purv2\source\repos\Airline-Manager\Airlines Management App\obj\Debug\Airlines_Management_App.Login.resources
+C:\Users\purv2\source\repos\Airline-Manager\Airlines Management App\obj\Debug\Airlines_Management_App.Properties.Resources.resources
+C:\Users\purv2\source\repos\Airline-Manager\Airlines Management App\obj\Debug\Airlines_Management_App.ViewFlights.resources
+C:\Users\purv2\source\repos\Airline-Manager\Airlines Management App\obj\Debug\Airlines Management App.csproj.GenerateResource.cache
+C:\Users\purv2\source\repos\Airline-Manager\Airlines Management App\obj\Debug\Airlines Management App.csproj.CoreCompileInputs.cache
+C:\Users\purv2\source\repos\Airline-Manager\Airlines Management App\obj\Debug\Airlines Management App.exe
+C:\Users\purv2\source\repos\Airline-Manager\Airlines Management App\obj\Debug\Airlines Management App.pdb
