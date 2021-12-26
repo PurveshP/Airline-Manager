@@ -89,6 +89,7 @@ namespace Airlines_Management_App
             this.textBox1.Size = new System.Drawing.Size(205, 35);
             this.textBox1.TabIndex = 12;
             this.textBox1.Text = "ID";
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label3
             // 
@@ -130,9 +131,9 @@ namespace Airlines_Management_App
             this.label6.ForeColor = System.Drawing.Color.Red;
             this.label6.Location = new System.Drawing.Point(12, 290);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(287, 36);
+            this.label6.Size = new System.Drawing.Size(261, 36);
             this.label6.TabIndex = 15;
-            this.label6.Text = "Passenger Number";
+            this.label6.Text = "Passport Number";
             // 
             // textBox3
             // 
@@ -156,6 +157,10 @@ namespace Airlines_Management_App
             // 
             this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Male",
+            "Female",
+            "Others"});
             this.comboBox1.Location = new System.Drawing.Point(376, 415);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(205, 37);
@@ -176,6 +181,15 @@ namespace Airlines_Management_App
             // 
             this.comboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
+            "Indian",
+            "British",
+            "French",
+            "German",
+            "Spanish",
+            "American",
+            "Chinese",
+            "Japanese"});
             this.comboBox2.Location = new System.Drawing.Point(376, 469);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(205, 37);
@@ -226,6 +240,7 @@ namespace Airlines_Management_App
             this.button2.TabIndex = 25;
             this.button2.Text = "Add";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click_1);
             // 
             // button1
             // 
@@ -241,6 +256,7 @@ namespace Airlines_Management_App
             this.button1.TabIndex = 24;
             this.button1.Text = "Cancel";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label10
             // 

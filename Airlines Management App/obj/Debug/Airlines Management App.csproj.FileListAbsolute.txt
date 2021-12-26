@@ -11,3 +11,8 @@ C:\Users\purv2\source\repos\Airline-Manager\Airlines Management App\obj\Debug\Ai
 C:\Users\purv2\source\repos\Airline-Manager\Airlines Management App\obj\Debug\Airlines Management App.csproj.CoreCompileInputs.cache
 C:\Users\purv2\source\repos\Airline-Manager\Airlines Management App\obj\Debug\Airlines Management App.exe
 C:\Users\purv2\source\repos\Airline-Manager\Airlines Management App\obj\Debug\Airlines Management App.pdb
+C:\Users\purv2\source\repos\Airline-Manager\Airlines Management App\bin\Debug\AirlinesDB.mdf
+C:\Users\purv2\source\repos\Airline-Manager\Airlines Management App\bin\Debug\AirlinesDB_log.ldf
+C:\Users\purv2\source\repos\Airline-Manager\Airlines Management App\obj\Debug\Airlines_Management_App.Passenger.resources
+C:\Users\purv2\source\repos\Airline-Manager\Airlines Management App\obj\Debug\Airlines_Management_App.ShowPassengers.resources
+C:\Users\purv2\source\repos\Airline-Manager\Airlines Management App\obj\Debug\Airlines_Management_App.TicketBooking.resources
