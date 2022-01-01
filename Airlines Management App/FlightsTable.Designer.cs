@@ -54,7 +54,7 @@ namespace Airlines_Management_App
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Imprint MT Shadow", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Red;
-            this.label1.Location = new System.Drawing.Point(292, 9);
+            this.label1.Location = new System.Drawing.Point(342, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(374, 57);
             this.label1.TabIndex = 3;
@@ -65,7 +65,7 @@ namespace Airlines_Management_App
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Imprint MT Shadow", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Red;
-            this.label2.Location = new System.Drawing.Point(324, 83);
+            this.label2.Location = new System.Drawing.Point(374, 83);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(298, 42);
             this.label2.TabIndex = 4;
@@ -126,7 +126,7 @@ namespace Airlines_Management_App
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Century Schoolbook", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.DarkRed;
-            this.button2.Location = new System.Drawing.Point(302, 601);
+            this.button2.Location = new System.Drawing.Point(273, 641);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(125, 49);
             this.button2.TabIndex = 10;
@@ -141,7 +141,7 @@ namespace Airlines_Management_App
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Century Schoolbook", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.DarkRed;
-            this.button1.Location = new System.Drawing.Point(512, 601);
+            this.button1.Location = new System.Drawing.Point(528, 641);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(154, 49);
             this.button1.TabIndex = 9;
@@ -185,12 +185,13 @@ namespace Airlines_Management_App
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(535, 198);
+            this.pictureBox1.Location = new System.Drawing.Point(620, 213);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(397, 316);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 15;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // label7
             // 
@@ -215,7 +216,7 @@ namespace Airlines_Management_App
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Imprint MT Shadow", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Red;
-            this.label8.Location = new System.Drawing.Point(931, 9);
+            this.label8.Location = new System.Drawing.Point(1003, 9);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(38, 33);
             this.label8.TabIndex = 18;
@@ -227,7 +228,7 @@ namespace Airlines_Management_App
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(981, 844);
+            this.ClientSize = new System.Drawing.Size(1053, 837);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.label7);

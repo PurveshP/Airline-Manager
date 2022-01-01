@@ -46,5 +46,10 @@ namespace Airlines_Management_App
         {
             Application.Exit();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -14,7 +14,7 @@ namespace Airlines_Management_App
     public partial class Passenger : Form
     {
 
-        public static string ConnectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\purv2\\OneDrive\\Documents\\AirlinesDB.mdf;Integrated Security=True;Connect Timeout=30";
+        public static string ConnectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\purv2\\source\\repos\\Airline-Manager\\AirlinesDB.mdf;Integrated Security=True;Connect Timeout=30";
 
         SqlConnection con = new SqlConnection(ConnectionString);
 
@@ -93,7 +93,7 @@ namespace Airlines_Management_App
 
         private void button2_Click_1(object sender, EventArgs e)
         {
-            int PassengerID = Int32.Parse(textBox1.Text);
+            string PassengerID = textBox1.Text;
             string PassengerName = textBox2.Text;
             string PassportNumber = textBox4.Text;
             string PassengerAddress = textBox3.Text;
@@ -112,7 +112,7 @@ namespace Airlines_Management_App
             //MessageBox.Show("Passenger nationality {0}", PassengerNation);
 
 
-            if (PassengerID == null || PassengerName == "" || PassportNumber == "" ||
+            if (PassengerID == "" || PassengerName == "" || PassportNumber == "" ||
                 PassengerAddress == "" || PassengerNation == "" || PassengerGen == "" ||
                 PassengerPhone == "")
             {
@@ -120,6 +120,9 @@ namespace Airlines_Management_App
             }
             else
             {
+                con.Open();
+                MessageBox.Show("Connected to data base");
+                con.Close();
                 try
                 {
                     con.Open();
@@ -128,7 +131,7 @@ namespace Airlines_Management_App
 
 
                     //cmd.CommandType = CommandType.StoredProcedure;
-                    cmd.Parameters.AddWithValue("@PassengerID", textBox1.Text);
+                    cmd.Parameters.AddWithValue("@PassengerID", Int32.Parse(textBox1.Text));
                     cmd.Parameters.AddWithValue("@PassengerName", textBox2.Text);
                     cmd.Parameters.AddWithValue("@Passport", textBox4.Text);
                     cmd.Parameters.AddWithValue("@PassengerAddress", textBox3.Text);
@@ -156,6 +159,18 @@ namespace Airlines_Management_App
         private void button1_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Exit");
+        }
+
+        private void Passenger_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            ShowPassengers showpass = new ShowPassengers();
+            showpass.Show();
+            this.Hide();
         }
     }
 }
