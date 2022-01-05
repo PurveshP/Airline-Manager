@@ -91,6 +91,8 @@ namespace Airlines_Management_App
 
         }
 
+        
+        // Add button
         private void button2_Click_1(object sender, EventArgs e)
         {
             string PassengerID = textBox1.Text;
@@ -120,9 +122,9 @@ namespace Airlines_Management_App
             }
             else
             {
-                con.Open();
-                MessageBox.Show("Connected to data base");
-                con.Close();
+                //con.Open();
+                //MessageBox.Show("Connected to data base");
+                //con.Close();
                 try
                 {
                     con.Open();
@@ -166,6 +168,7 @@ namespace Airlines_Management_App
 
         }
 
+        // Show passenger button
         private void button3_Click(object sender, EventArgs e)
         {
             ShowPassengers showpass = new ShowPassengers();
