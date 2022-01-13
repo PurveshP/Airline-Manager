@@ -16,7 +16,7 @@ namespace Airlines_Management_App
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ShowPassengers());
+            Application.Run(new ViewFlights());
         }
     }
 }

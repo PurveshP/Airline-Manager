@@ -46,6 +46,7 @@ namespace Airlines_Management_App
             this.label7 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label8 = new System.Windows.Forms.Label();
+            this.button3 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -77,7 +78,7 @@ namespace Airlines_Management_App
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Arial", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Red;
-            this.label3.Location = new System.Drawing.Point(12, 515);
+            this.label3.Location = new System.Drawing.Point(24, 454);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(136, 36);
             this.label3.TabIndex = 5;
@@ -88,11 +89,11 @@ namespace Airlines_Management_App
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Arial", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Red;
-            this.label4.Location = new System.Drawing.Point(12, 387);
+            this.label4.Location = new System.Drawing.Point(24, 326);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(115, 36);
+            this.label4.Size = new System.Drawing.Size(104, 36);
             this.label4.TabIndex = 6;
-            this.label4.Text = "Source\r\n";
+            this.label4.Text = "Arrival";
             this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label5
@@ -100,11 +101,11 @@ namespace Airlines_Management_App
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Arial", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Red;
-            this.label5.Location = new System.Drawing.Point(12, 305);
+            this.label5.Location = new System.Drawing.Point(24, 244);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(115, 36);
+            this.label5.Size = new System.Drawing.Size(155, 36);
             this.label5.TabIndex = 7;
-            this.label5.Text = "Source";
+            this.label5.Text = "Departure";
             this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label6
@@ -112,7 +113,7 @@ namespace Airlines_Management_App
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Arial", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Red;
-            this.label6.Location = new System.Drawing.Point(12, 224);
+            this.label6.Location = new System.Drawing.Point(24, 163);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(215, 36);
             this.label6.TabIndex = 8;
@@ -126,12 +127,13 @@ namespace Airlines_Management_App
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Century Schoolbook", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.DarkRed;
-            this.button2.Location = new System.Drawing.Point(273, 641);
+            this.button2.Location = new System.Drawing.Point(364, 538);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(125, 49);
+            this.button2.Size = new System.Drawing.Size(125, 71);
             this.button2.TabIndex = 10;
             this.button2.Text = "Add";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -141,51 +143,80 @@ namespace Airlines_Management_App
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Century Schoolbook", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.DarkRed;
-            this.button1.Location = new System.Drawing.Point(528, 641);
+            this.button1.Location = new System.Drawing.Point(574, 538);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(154, 49);
+            this.button1.Size = new System.Drawing.Size(154, 71);
             this.button1.TabIndex = 9;
             this.button1.Text = "Cancel";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // textBox2
             // 
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(273, 227);
+            this.textBox2.Location = new System.Drawing.Point(285, 166);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(205, 35);
+            this.textBox2.Size = new System.Drawing.Size(241, 35);
             this.textBox2.TabIndex = 11;
             this.textBox2.Text = "Flight number";
             // 
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(273, 518);
+            this.textBox1.Location = new System.Drawing.Point(285, 457);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(205, 35);
+            this.textBox1.Size = new System.Drawing.Size(241, 35);
             this.textBox1.TabIndex = 12;
             this.textBox1.Text = "Number of Seats";
             // 
             // comboBox1
             // 
+            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(273, 313);
+            this.comboBox1.Items.AddRange(new object[] {
+            "Atlanta",
+            "Dallas",
+            "Denver",
+            "Los Angeles",
+            "Delhi",
+            "Dubai",
+            "Heathrow",
+            "Mexico City",
+            "Frankfurt",
+            "Madrid",
+            "Beijing",
+            "Newark"});
+            this.comboBox1.Location = new System.Drawing.Point(285, 252);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(205, 28);
+            this.comboBox1.Size = new System.Drawing.Size(241, 37);
             this.comboBox1.TabIndex = 13;
             // 
             // comboBox2
             // 
+            this.comboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(273, 395);
+            this.comboBox2.Items.AddRange(new object[] {
+            "Atlanta",
+            "Dallas",
+            "Denver",
+            "Los Angeles",
+            "Delhi",
+            "Dubai",
+            "Heathrow",
+            "Mexico City",
+            "Frankfurt",
+            "Madrid",
+            "Beijing",
+            "Newark"});
+            this.comboBox2.Location = new System.Drawing.Point(285, 325);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(205, 28);
+            this.comboBox2.Size = new System.Drawing.Size(241, 37);
             this.comboBox2.TabIndex = 14;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(620, 213);
+            this.pictureBox1.Location = new System.Drawing.Point(632, 152);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(397, 316);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -198,7 +229,7 @@ namespace Airlines_Management_App
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Arial", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Red;
-            this.label7.Location = new System.Drawing.Point(12, 453);
+            this.label7.Location = new System.Drawing.Point(24, 392);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(81, 36);
             this.label7.TabIndex = 16;
@@ -206,9 +237,10 @@ namespace Airlines_Management_App
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(273, 453);
+            this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePicker1.Location = new System.Drawing.Point(285, 392);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(205, 26);
+            this.dateTimePicker1.Size = new System.Drawing.Size(241, 35);
             this.dateTimePicker1.TabIndex = 17;
             // 
             // label8
@@ -224,11 +256,28 @@ namespace Airlines_Management_App
             this.label8.TextAlign = System.Drawing.ContentAlignment.TopRight;
             this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Century Schoolbook", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.Color.DarkRed;
+            this.button3.Location = new System.Drawing.Point(364, 615);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(364, 49);
+            this.button3.TabIndex = 19;
+            this.button3.Text = "View Flights";
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
             // FlightsTable
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1053, 837);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.label7);
@@ -249,6 +298,7 @@ namespace Airlines_Management_App
             this.Name = "FlightsTable";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FlightsTable";
+            this.Load += new System.EventHandler(this.FlightsTable_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -273,5 +323,6 @@ namespace Airlines_Management_App
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Button button3;
     }
 }

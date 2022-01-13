@@ -72,7 +72,7 @@ namespace Airlines_Management_App
             //DataGridView PassengerDGV = new DataGridView();
             //sqlDA.Fill(ds);
             //PassengerDGV.DataSource = ds.Tables[0];
-            con.Close();
+            //con.Close();
         }
         private void ShowPassengers_Load(object sender, EventArgs e)
         {
