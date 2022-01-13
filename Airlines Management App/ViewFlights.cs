@@ -96,9 +96,20 @@ namespace Airlines_Management_App
             {
                 MessageBox.Show(ex.ToString());
             }
-            //MessageBox.Show("The value of Flight ID is - " + textBox2.Text);
+            MessageBox.Show("The value of Flight ID is - " + textBox2.Text);
 
         }
+
+
+
+        /*
+         *******************************************************************************************************
+         
+         Use only integers for flight ID varchar and string is not working giving invalid column erros
+
+         
+         *******************************************************************************************************
+         */
 
 
         //Delete Button
@@ -145,7 +156,7 @@ namespace Airlines_Management_App
                 try
                 {
                     con.Open();
-                    string updateQuery = "UPDATE FlightsTable SET FlightDeparture = '" + comboBox1.SelectedItem.ToString() + "', FlightArrival = '" + comboBox2.SelectedItem.ToString() + "', FlightDate = '" + dateTimePicker1.Value.ToString() + "', FlightCapacity = '" + textBox1.Text + "' WHERE FlightID = " + textBox2.Text + ";";
+                    string updateQuery = "UPDATE FlightsTable SET FlightDestination = '" + comboBox1.SelectedItem.ToString() + "', FlightArrival = '" + comboBox2.SelectedItem.ToString() + "', FlightDate = '" + dateTimePicker1.Value.ToString() + "', FlightCapacity = '" + textBox1.Text + "' WHERE FlightID = " + textBox2.Text + ";";
                     SqlCommand cmd = new SqlCommand(updateQuery, con);
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Flight Updated Successfully");
